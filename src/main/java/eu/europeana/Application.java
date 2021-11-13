@@ -1,4 +1,4 @@
-package eu.europeana.service;
+package eu.europeana;
 
 import eu.europeana.config.ServiceConfiguration;
 import org.springframework.boot.SpringApplication;
@@ -7,10 +7,10 @@ import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
 @Import({ServiceConfiguration.class})
-public class ServiceApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }

@@ -35,7 +35,7 @@ public final class CalculationRecordBuilder {
 
     public CalculationRecord build() {
         CalculationRecord calculationRecord = new CalculationRecord();
-        calculationRecord.setSmalllestPositiveNumber(smalllestPositiveNumber);
+        calculationRecord.setSmallestPositiveNumber(smalllestPositiveNumber);
         calculationRecord.setFrom(from);
         calculationRecord.setTo(to);
         calculationRecord.setElapsedTime(elapsedTime);

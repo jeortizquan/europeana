@@ -11,6 +11,12 @@ public abstract class CalculationResponse {
         return response;
     }
 
+    public abstract ResponseEntity<Object> getSuccessAcceptedResponseEntity();
+
+    public abstract ResponseEntity<Object> getSuccessResponseEntity();
+
+    public abstract ResponseEntity<Object> getFailureResponseEntity(Exception ex, String errorMessage);
+
     public void setResponse(ResponseEntity<Object> response) {
         this.response = response;
     }

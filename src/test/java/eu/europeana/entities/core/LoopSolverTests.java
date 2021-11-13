@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * Unit tests {@link LoopSolver}
+ * Unit Tests {@link LoopSolver}
  *
  * @author Jorge Ortiz
  */

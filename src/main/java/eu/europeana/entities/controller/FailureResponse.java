@@ -6,7 +6,7 @@ public class FailureResponse {
     private String error;
     private String exceptionMessage;
 
-    public FailureResponse(String timeStamp, long status, String errorMessage, String exceptionMessage) {
+    public FailureResponse(final String timeStamp,final long status,final String errorMessage,final String exceptionMessage) {
         this.timeStamp = timeStamp;
         this.status = status;
         this.error = errorMessage;

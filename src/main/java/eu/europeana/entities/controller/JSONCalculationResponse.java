@@ -7,10 +7,25 @@ import org.springframework.http.ResponseEntity;
 
 import java.time.LocalDateTime;
 
+/**
+ * Calculation JSON format response
+ *
+ * @author Jorge Ortiz
+ */
 public class JSONCalculationResponse extends CalculationResponse {
 
-    @Autowired
     private Gson gson;
+
+    public JSONCalculationResponse(Gson gson) {
+        this.gson = gson;
+    }
+
+    public ResponseEntity<Object> getSuccessAcceptedResponseEntity() {
+        this.response = ResponseEntity.accepted()
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(gson.toJson(this.record));
+        return this.response;
+    }
 
     public ResponseEntity<Object> getSuccessResponseEntity() {
         this.response = ResponseEntity.ok()

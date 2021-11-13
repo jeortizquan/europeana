@@ -10,7 +10,7 @@ public class LoopSolver implements Solver {
     /**
      * Max value boundary of the calculation
      */
-    private long maxValueToProcess;
+    private long maxValueToProcess = 1;
 
     /**
      * Calculate method using Loops
