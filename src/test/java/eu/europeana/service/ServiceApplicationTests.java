@@ -1,10 +1,10 @@
-package eu.europeana.solution;
+package eu.europeana.service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SolutionApplicationTests {
+class ServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

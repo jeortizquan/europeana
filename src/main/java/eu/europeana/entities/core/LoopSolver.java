@@ -1,17 +1,19 @@
-package eu.europeana.entities;
+package eu.europeana.entities.core;
 
 /**
- * SmallestPositiveSolver implements {@link Solver}
- *
+ * LoopSolver implements {@link Solver}
+ * <p>
  * Class to calculate the smallest positive number that can be divided by
  * a sequential range of numbers from 1 to maxValueToProcess without remainder
  */
-public class SmallestPositiveSolver implements Solver {
-
+public class LoopSolver implements Solver {
+    /**
+     * Max value boundary of the calculation
+     */
     private long maxValueToProcess;
 
     /**
-     * Calculate method
+     * Calculate method using Loops
      *
      * @return Smallest positive number
      */

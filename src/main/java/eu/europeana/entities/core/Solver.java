@@ -1,4 +1,4 @@
-package eu.europeana.entities;
+package eu.europeana.entities.core;
 
 /**
  * Interface Solver
