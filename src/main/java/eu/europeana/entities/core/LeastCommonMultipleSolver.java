@@ -1,5 +1,12 @@
 package eu.europeana.entities.core;
 
+/**
+ * LeastCommonMultiple implements {@link Solver}
+ *
+ * Class to calculate the smallest positive number that can be divided by
+ * a sequential range of numbers from 1 to maxValueToProcess without remainder using lcd algorithm
+ * @author Jorge Ortiz
+ */
 public class LeastCommonMultipleSolver implements Solver {
     /**
      * Max value boundary of the calculation

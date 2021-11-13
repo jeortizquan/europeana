@@ -1,5 +1,10 @@
 package eu.europeana.entities.controller;
 
+/**
+ * FailureResponse Class to handle errors
+ *
+ * @author Jorge Ortiz
+ */
 public class FailureResponse {
     private String timeStamp;
     private long status;

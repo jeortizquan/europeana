@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import java.time.LocalDateTime;
 
 /**
- * Calculation JSON format response
+ * Calculation JSON format response extends {@link CalculationResponse}
  *
  * @author Jorge Ortiz
  */

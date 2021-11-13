@@ -50,8 +50,7 @@ docker-compose up -d
 
 #### JSON Format
 ```
-curl --header "Accept: application/json" \ 
---request POST \ http://<host>:<port>/maxvalue/{id} 
+curl --header "Accept: application/json" --request POST http://<host>:<port>/maxvalue{id}
 ```
 Response:
 ```
@@ -61,8 +60,7 @@ HTTP code: 202 Response Body:
 
 #### XML Format
 ```
-curl --header "Accept: application/xml" \ 
---request POST \ http://<host>:<port>/maxvalue/{id} 
+curl --header "Accept: application/xml" --request POST http://<host>:<port>/maxvalue{id}
 ```
 Response:
 ```
@@ -79,8 +77,7 @@ HTTP code: 202 Response Body:
 ### 2. Start calculation:
 #### JSON Format
 ```
-curl --header "Content-Type: application/json" \ 
---request POST \ http://<host>:<port>/calculate 
+curl --header "Accept: application/json" --request POST http://<host>:<port>/calculate
 will calculate from 1 to maxValue, by default maxValue is set to 1. 
 ```
 Response:
@@ -90,8 +87,7 @@ HTTP code: 200 Response Body:
 ```
 #### XML Format
 ```
-curl --header "Content-Type: application/xml" \ 
---request POST \ http://<host>:<port>/calculate 
+curl --header "Accept: application/xml" --request POST http://<host>:<port>/calculate
 will calculate from 1 to maxValue, by default maxValue is set to 1. 
 ```
 Response:
@@ -109,7 +105,7 @@ HTTP code: 200 Response Body:
 ### 3. Run API locally (alternative to docker-compose) 
 Note: Java and Maven are prerequisites.
 
-   Windows
+Windows
 ```
 mvnw spring-boot:run
 ```
@@ -134,9 +130,9 @@ http://localhost:8000/actuator/metrics
 ```
 
 # Roadmap
-[x] algorithm using loop (limitation until 20) then takes too long.
-[x] algorithm using least common divisor (limitation until 122) then variable long is not supported anymore.
-[ ] implementation with BigInteger to support large numbers.
+- [x] algorithm using loop (limitation until 20) then takes too long.
+- [x] algorithm using least common divisor (limitation until 122) then variable long is not supported anymore.
+- [ ] implementation with BigInteger to support large numbers.
 
 # Contributing
 Any contributions you make are appreciated.

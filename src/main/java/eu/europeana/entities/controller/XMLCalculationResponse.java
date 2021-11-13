@@ -12,7 +12,7 @@ import java.io.StringWriter;
 import java.time.LocalDateTime;
 
 /**
- * Calculation XML format response
+ * Calculation XML format response extends {@link CalculationResponse}
  *
  * @author Jorge Ortiz
  */

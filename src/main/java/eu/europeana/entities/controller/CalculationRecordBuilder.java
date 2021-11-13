@@ -1,5 +1,10 @@
 package eu.europeana.entities.controller;
 
+/**
+ * CalculationRecordBuilder pattern to get a CalculationRecord object
+ *
+ * @author Jorge Ortiz
+ */
 public final class CalculationRecordBuilder {
     private long smalllestPositiveNumber;
     private long from;

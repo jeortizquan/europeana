@@ -4,7 +4,7 @@ package eu.europeana.entities.core;
  * LoopSolver implements {@link Solver}
  * <p>
  * Class to calculate the smallest positive number that can be divided by
- * a sequential range of numbers from 1 to maxValueToProcess without remainder
+ * a sequential range of numbers from 1 to maxValueToProcess without remainder using loops
  */
 public class LoopSolver implements Solver {
     /**

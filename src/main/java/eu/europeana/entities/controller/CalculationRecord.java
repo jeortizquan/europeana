@@ -2,6 +2,11 @@ package eu.europeana.entities.controller;
 
 import java.util.Objects;
 
+/**
+ * CalculationRecord Data Transfer Object in the response of the controller
+ *
+ * @author Jorge Ortiz
+ */
 public class CalculationRecord {
     private long smallestPositiveNumber;
     private long from;

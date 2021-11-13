@@ -2,6 +2,11 @@ package eu.europeana.entities.controller;
 
 import org.springframework.http.ResponseEntity;
 
+/**
+ * CalculationResponse Class
+ *
+ * @author Jorge Ortiz
+ */
 public abstract class CalculationResponse {
     protected CalculationRecord record;
 
