@@ -77,7 +77,7 @@ HTTP code: 202 Response Body:
 ### 2. Start calculation:
 #### JSON Format
 ```
-curl --header "Accept: application/json" --request POST http://<host>:<port>/calculate
+curl --header "Accept: application/json" --request GET http://<host>:<port>/calculate
 will calculate from 1 to maxValue, by default maxValue is set to 1. 
 ```
 Response:
@@ -87,7 +87,7 @@ HTTP code: 200 Response Body:
 ```
 #### XML Format
 ```
-curl --header "Accept: application/xml" --request POST http://<host>:<port>/calculate
+curl --header "Accept: application/xml" --request GET http://<host>:<port>/calculate
 will calculate from 1 to maxValue, by default maxValue is set to 1. 
 ```
 Response:
