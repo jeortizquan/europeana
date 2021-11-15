@@ -30,7 +30,7 @@ public class ServiceController {
         return service.setMaxValueToProcess(acceptHeader, maxValueToProcess);
     }
 
-    @PostMapping(path = "/calculate")
+    @GetMapping(path = "/calculate")
     public ResponseEntity<Object> calculate(@RequestHeader(value = "accept") String acceptHeader) {
 
         return service.calculate(acceptHeader);

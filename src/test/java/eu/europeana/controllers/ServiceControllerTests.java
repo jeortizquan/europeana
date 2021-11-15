@@ -83,7 +83,7 @@ public class ServiceControllerTests {
 
     @Test
     public void calculateValueWithoutHeader() throws Exception {
-        this.mockMvc.perform(post(API_HOST+"/calculate"))
+        this.mockMvc.perform(get(API_HOST+"/calculate"))
                 .andDo(print())
                 .andExpect(status().isBadRequest());
     }
@@ -118,7 +118,7 @@ public class ServiceControllerTests {
 
     @Test
     public void calculateValueJSON() throws Exception {
-        this.mockMvc.perform(post(API_HOST+"/calculate").accept(MediaType.APPLICATION_JSON))
+        this.mockMvc.perform(get(API_HOST+"/calculate").accept(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.smallestPositiveNumber").exists())
@@ -129,7 +129,7 @@ public class ServiceControllerTests {
 
     @Test
     public void calculateValueXML() throws Exception {
-        this.mockMvc.perform(post(API_HOST+"/calculate").accept(MediaType.APPLICATION_XML))
+        this.mockMvc.perform(get(API_HOST+"/calculate").accept(MediaType.APPLICATION_XML))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(xpath("/CalculationRecord/smallestPositiveNumber").exists())
