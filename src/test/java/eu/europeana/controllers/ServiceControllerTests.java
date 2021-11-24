@@ -24,7 +24,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Import(ServiceConfiguration.class)
 public class ServiceControllerTests {
 
-    private static final String API_HOST ="http://localhost:8000";
+    private static final String API_HOST ="http://localhost:8000/api";
 
     @Autowired
     private MockMvc mockMvc;
@@ -34,7 +34,7 @@ public class ServiceControllerTests {
 
     @Test
     public void welcomeIndex() throws Exception {
-        this.mockMvc.perform(get(API_HOST)).andDo(print()).andExpect(status().isOk())
+        this.mockMvc.perform(get(API_HOST+"/")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Welcome to Europeana Smallest Positive Number Calculator API")));
     }
 

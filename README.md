@@ -128,6 +128,9 @@ http://localhost:8000/actuator/health
 http://localhost:8000/actuator/info
 http://localhost:8000/actuator/metrics
 ```
+# Architecture
+![architecture](./images/architecture.png)
+The design behind this system is an approach of clean architecture paradigm.
 
 # Roadmap
 - [x] algorithm using loop (limitation until 20) then takes too long.

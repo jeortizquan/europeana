@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
  * @author Jorge Ortiz
  */
 @RestController
+@RequestMapping("/api")
 public class ServiceController {
 
     public static final String API_INDEX = "Welcome to Europeana Smallest Positive Number Calculator API";
